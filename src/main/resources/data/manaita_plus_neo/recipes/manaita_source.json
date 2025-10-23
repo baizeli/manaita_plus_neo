@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 114,
+  "cookingtime": 200,
+  "ingredient": {
+    "tag": "manaita_plus_neo:manaita_block_eq"
+  },
+  "result": "manaita_plus_neo:manaita_source"
+}

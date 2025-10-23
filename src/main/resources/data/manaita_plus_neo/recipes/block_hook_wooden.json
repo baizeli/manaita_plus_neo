@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "000",
+    "1 1",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:oak_planks"
+    },
+    "1": {
+      "item": "manaita_plus_neo:manaita_hook"
+    }
+  },
+  "result": {
+    "item": "manaita_plus_neo:block_hook_manaita",
+    "nbt": {
+      "ManaitaType": 0
+    },
+    "count": 1
+  }
+}

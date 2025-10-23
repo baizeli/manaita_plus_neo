@@ -1,0 +1,139 @@
+{
+  "variants": {
+    "facing=east,types=0": {
+      "model": "manaita_plus_neo:block/hook/hook_block_wooden_east",
+      "y": 90
+    },
+    "facing=east,types=1": {
+      "model": "manaita_plus_neo:block/hook/hook_block_stone_east",
+      "y": 90
+    },
+    "facing=east,types=2": {
+      "model": "manaita_plus_neo:block/hook/hook_block_iron_east",
+      "y": 90
+    },
+    "facing=east,types=3": {
+      "model": "manaita_plus_neo:block/hook/hook_block_gold_east",
+      "y": 90
+    },
+    "facing=east,types=4": {
+      "model": "manaita_plus_neo:block/hook/hook_block_diamond_east",
+      "y": 90
+    },
+    "facing=east,types=5": {
+      "model": "manaita_plus_neo:block/hook/hook_block_emerald_east",
+      "y": 90
+    },
+    "facing=east,types=6": {
+      "model": "manaita_plus_neo:block/hook/hook_block_redstone_east",
+      "y": 90
+    },
+    "facing=east,types=7": {
+      "model": "manaita_plus_neo:block/hook/hook_block_netherite_east",
+      "y": 90
+    },
+    "facing=east,types=8": {
+      "model": "manaita_plus_neo:block/hook/hook_block_wooden_east",
+      "y": 90
+    },
+    "facing=north,types=0": {
+      "model": "manaita_plus_neo:block/hook/hook_block_wooden_north"
+    },
+    "facing=north,types=1": {
+      "model": "manaita_plus_neo:block/hook/hook_block_stone_north"
+    },
+    "facing=north,types=2": {
+      "model": "manaita_plus_neo:block/hook/hook_block_iron_north"
+    },
+    "facing=north,types=3": {
+      "model": "manaita_plus_neo:block/hook/hook_block_gold_north"
+    },
+    "facing=north,types=4": {
+      "model": "manaita_plus_neo:block/hook/hook_block_diamond_north"
+    },
+    "facing=north,types=5": {
+      "model": "manaita_plus_neo:block/hook/hook_block_emerald_north"
+    },
+    "facing=north,types=6": {
+      "model": "manaita_plus_neo:block/hook/hook_block_redstone_north"
+    },
+    "facing=north,types=7": {
+      "model": "manaita_plus_neo:block/hook/hook_block_netherite_north"
+    },
+    "facing=north,types=8": {
+      "model": "manaita_plus_neo:block/hook/hook_block_wooden_north"
+    },
+    "facing=south,types=0": {
+      "model": "manaita_plus_neo:block/hook/hook_block_wooden_south",
+      "y": 180
+    },
+    "facing=south,types=1": {
+      "model": "manaita_plus_neo:block/hook/hook_block_stone_south",
+      "y": 180
+    },
+    "facing=south,types=2": {
+      "model": "manaita_plus_neo:block/hook/hook_block_iron_south",
+      "y": 180
+    },
+    "facing=south,types=3": {
+      "model": "manaita_plus_neo:block/hook/hook_block_gold_south",
+      "y": 180
+    },
+    "facing=south,types=4": {
+      "model": "manaita_plus_neo:block/hook/hook_block_diamond_south",
+      "y": 180
+    },
+    "facing=south,types=5": {
+      "model": "manaita_plus_neo:block/hook/hook_block_emerald_south",
+      "y": 180
+    },
+    "facing=south,types=6": {
+      "model": "manaita_plus_neo:block/hook/hook_block_redstone_south",
+      "y": 180
+    },
+    "facing=south,types=7": {
+      "model": "manaita_plus_neo:block/hook/hook_block_netherite_south",
+      "y": 180
+    },
+    "facing=south,types=8": {
+      "model": "manaita_plus_neo:block/hook/hook_block_wooden_south",
+      "y": 180
+    },
+    "facing=west,types=0": {
+      "model": "manaita_plus_neo:block/hook/hook_block_wooden_west",
+      "y": 270
+    },
+    "facing=west,types=1": {
+      "model": "manaita_plus_neo:block/hook/hook_block_stone_west",
+      "y": 270
+    },
+    "facing=west,types=2": {
+      "model": "manaita_plus_neo:block/hook/hook_block_iron_west",
+      "y": 270
+    },
+    "facing=west,types=3": {
+      "model": "manaita_plus_neo:block/hook/hook_block_gold_west",
+      "y": 270
+    },
+    "facing=west,types=4": {
+      "model": "manaita_plus_neo:block/hook/hook_block_diamond_west",
+      "y": 270
+    },
+    "facing=west,types=5": {
+      "model": "manaita_plus_neo:block/hook/hook_block_emerald_west",
+      "y": 270
+    },
+    "facing=west,types=6": {
+      "model": "manaita_plus_neo:block/hook/hook_block_redstone_west",
+      "y": 270
+    },
+    "facing=west,types=7": {
+      "model": "manaita_plus_neo:block/hook/hook_block_netherite_west",
+      "y": 270
+    },
+    "facing=west,types=8": {
+      "model": "manaita_plus_neo:block/hook/hook_block_wooden_west",
+      "y": 270
+    }
+  }
+}

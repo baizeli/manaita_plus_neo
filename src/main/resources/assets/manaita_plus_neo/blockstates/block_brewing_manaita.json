@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "types=0": {
+      "model": "manaita_plus_neo:block/brewing_manaita_model"
+    },
+    "types=1": {
+      "model": "manaita_plus_neo:block/brewing/model/brewing_manaita_wooden"
+    },
+    "types=2": {
+      "model": "manaita_plus_neo:block/brewing/model/brewing_manaita_stone"
+    },
+    "types=3": {
+      "model": "manaita_plus_neo:block/brewing/model/brewing_manaita_iron"
+    },
+    "types=4": {
+      "model": "manaita_plus_neo:block/brewing/model/brewing_manaita_gold"
+    },
+    "types=5": {
+      "model": "manaita_plus_neo:block/brewing/model/brewing_manaita_diamond"
+    },
+    "types=6": {
+      "model": "manaita_plus_neo:block/brewing/model/brewing_manaita_emerald"
+    },
+    "types=7": {
+      "model": "manaita_plus_neo:block/brewing/model/brewing_manaita_redstone"
+    },
+    "types=8": {
+      "model": "manaita_plus_neo:block/brewing/model/brewing_manaita_netherite"
+    }
+  }
+}

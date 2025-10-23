@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "000",
+    "1 1",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond_block"
+    },
+    "1": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "manaita_plus_neo:block_furnace_manaita",
+    "count": 1
+
+  }
+}

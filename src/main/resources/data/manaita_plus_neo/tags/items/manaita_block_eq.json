@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "manaita_plus_neo:block_crafting_manaita",
+    "manaita_plus_neo:block_furnace_manaita",
+    "manaita_plus_neo:block_brewing_manaita"
+  ]
+}

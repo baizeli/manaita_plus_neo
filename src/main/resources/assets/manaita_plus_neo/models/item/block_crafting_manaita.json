@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "manaita_plus_neo:item/crafting_manaita_wooden",
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 1.0
+      }
+    },
+    {
+      "model": "manaita_plus_neo:item/crafting_manaita_stone",
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 2.0
+      }
+    },
+    {
+      "model": "manaita_plus_neo:item/crafting_manaita_iron",
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 3.0
+      }
+    },
+    {
+      "model": "manaita_plus_neo:item/crafting_manaita_gold",
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 4.0
+      }
+    },
+    {
+      "model": "manaita_plus_neo:item/crafting_manaita_diamond",
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 5.0
+      }
+    },
+    {
+      "model": "manaita_plus_neo:item/crafting_manaita_emerald",
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 6.0
+      }
+    },
+    {
+      "model": "manaita_plus_neo:item/crafting_manaita_redstone",
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 7.0
+      }
+    },
+    {
+      "model": "manaita_plus_neo:item/crafting_manaita_netherite",
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 8.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "manaita_plus_neo:block/crafting_manaita"
+  }
+}

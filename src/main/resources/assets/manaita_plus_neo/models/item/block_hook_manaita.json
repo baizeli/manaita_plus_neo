@@ -1,0 +1,50 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "manaita_plus_neo:block/hook/fixed_hook_wooden"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 1
+      },
+      "model": "manaita_plus_neo:block/hook/fixed_hook_stone"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 2
+      },
+      "model": "manaita_plus_neo:block/hook/fixed_hook_iron"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 3
+      },
+      "model": "manaita_plus_neo:block/hook/fixed_hook_gold"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 4
+      },
+      "model": "manaita_plus_neo:block/hook/fixed_hook_diamond"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 5
+      },
+      "model": "manaita_plus_neo:block/hook/fixed_hook_emerald"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 6
+      },
+      "model": "manaita_plus_neo:block/hook/fixed_hook_redstone"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 7
+      },
+      "model": "manaita_plus_neo:block/hook/fixed_hook_netherite"
+    }
+  ]
+}

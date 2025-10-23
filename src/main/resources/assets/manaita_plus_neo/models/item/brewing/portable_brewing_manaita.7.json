@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "manaita_plus_neo:item/portable_brewing_manaita.7"
+  }
+}

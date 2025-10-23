@@ -1,0 +1,29 @@
+# Main Class
+cpw.mods.bootstraplauncher.BootstrapLauncher
+
+# NeoForge Run-Type Program Arguments
+--launchTarget
+forgedatadev
+--assetIndex
+17
+--assetsDir
+D:\\111\\caches\\neoformruntime\\assets
+--gameDir
+.
+--fml.fmlVersion
+4.0.41
+--fml.mcVersion
+1.21.1
+--fml.neoForgeVersion
+21.1.194
+--fml.neoFormVersion
+20240808.144430
+
+# User Supplied Program Arguments
+--mod
+manaita_plus_neo
+--all
+--output
+C:\\Users\\Administrator\\Desktop\\manaita_plus_neo-1.21.1-NeoForge\\src\\generated\\resources
+--existing
+C:\\Users\\Administrator\\Desktop\\manaita_plus_neo-1.21.1-NeoForge\\src\\main\\resources

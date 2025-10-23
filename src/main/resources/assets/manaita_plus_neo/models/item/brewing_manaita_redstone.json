@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "manaita_plus_neo:block/brewing/brewing_manaita_redstone"
+  }
+}

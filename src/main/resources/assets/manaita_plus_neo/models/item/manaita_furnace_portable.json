@@ -1,0 +1,56 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "manaita_plus_neo:item/portable_furnace_manaita.0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 1
+      },
+      "model": "manaita_plus_neo:item/furnace/portable_furnace_manaita.1"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 2
+      },
+      "model": "manaita_plus_neo:item/furnace/portable_furnace_manaita.2"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 3
+      },
+      "model": "manaita_plus_neo:item/furnace/portable_furnace_manaita.3"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 4
+      },
+      "model": "manaita_plus_neo:item/furnace/portable_furnace_manaita.4"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 5
+      },
+      "model": "manaita_plus_neo:item/furnace/portable_furnace_manaita.5"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 6
+      },
+      "model": "manaita_plus_neo:item/furnace/portable_furnace_manaita.6"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 7
+      },
+      "model": "manaita_plus_neo:item/furnace/portable_furnace_manaita.7"
+    },
+    {
+      "predicate": {
+        "manaita_plus_neo:manaita_type": 8
+      },
+      "model": "manaita_plus_neo:item/furnace/portable_furnace_manaita.8"
+    }
+  ]
+}

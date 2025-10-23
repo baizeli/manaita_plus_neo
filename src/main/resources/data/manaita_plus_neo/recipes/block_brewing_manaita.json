@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "000",
+    "1 1",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond_block"
+    },
+    "1": {
+      "item": "minecraft:brewing_stand"
+    }
+  },
+  "result": {
+    "item": "manaita_plus_neo:block_brewing_manaita",
+    "count": 1
+  }
+}

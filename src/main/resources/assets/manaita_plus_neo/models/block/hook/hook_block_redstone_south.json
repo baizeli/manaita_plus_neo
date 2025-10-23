@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            5.0,
+            5.0,
+            10.0,
+            10.0
+          ]
+        },
+        "east": {
+          "texture": "#all",
+          "uv": [
+            5.0,
+            5.0,
+            10.0,
+            10.0
+          ]
+        },
+        "north": {
+          "texture": "#all",
+          "uv": [
+            5.0,
+            5.0,
+            10.0,
+            10.0
+          ]
+        },
+        "south": {
+          "texture": "#all",
+          "uv": [
+            5.0,
+            5.0,
+            10.0,
+            10.0
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            5.0,
+            5.0,
+            10.0,
+            10.0
+          ]
+        },
+        "west": {
+          "texture": "#all",
+          "uv": [
+            5.0,
+            5.0,
+            10.0,
+            10.0
+          ]
+        }
+      },
+      "from": [
+        7,
+        12,
+        14
+      ],
+      "to": [
+        9,
+        14,
+        16
+      ]
+    }
+  ],
+  "textures": {
+    "all": "manaita_plus_neo:block/hook/fixed_hook_redstone"
+  }
+}

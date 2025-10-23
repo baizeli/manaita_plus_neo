@@ -1,0 +1,25 @@
+{
+  "type": "manaita_plus_neo:manaita_crafting_type",
+  "category": "misc",
+  "pattern": [
+    "000",
+    "1 1",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "1": {
+      "item": "manaita_plus_neo:block_hook_manaita",
+      "type": 5
+    }
+  },
+  "result": {
+    "item": "manaita_plus_neo:block_hook_manaita",
+    "nbt": {
+      "ManaitaType": 7
+    },
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "manaita_plus_neo:block/furnace/furnace_manaita_emerald"
+  }
+}

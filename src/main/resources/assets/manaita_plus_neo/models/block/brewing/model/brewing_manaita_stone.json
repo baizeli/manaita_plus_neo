@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "particle": "manaita_plus_neo:block/brewing/brewing_manaita_stone"
+  }
+}

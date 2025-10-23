@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "&& ",
+    " % ",
+    " % "
+  ],
+  "key": {
+    "&": {
+      "tag": "manaita_plus_neo:manaita_block_eq"
+    },
+    "%": {
+      "item": "manaita_plus_neo:manaita_hook"
+    }
+  },
+  "result": {
+    "item": "manaita_plus_neo:manaita_hoe",
+    "count": 1
+  }
+}
