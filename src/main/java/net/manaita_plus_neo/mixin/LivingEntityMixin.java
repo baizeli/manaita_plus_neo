@@ -1,6 +1,8 @@
 package net.manaita_plus_neo.mixin;
 
+import net.manaita_plus_neo.item.ModItems;
 import net.manaita_plus_neo.util.ManaitaArmorUtils;
+import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.player.Player;
@@ -17,7 +19,7 @@ public class LivingEntityMixin {
         LivingEntity entity = (LivingEntity) (Object) this;
 
         if (entity instanceof Player player) {
-            if (ManaitaArmorUtils.isWearingManaitaArmor(player)) {
+            if (ManaitaArmorUtils.isWearingManaitaArmor(player) || player.getInventory().items.stream().anyMatch(stack -> !stack.isEmpty() && stack.is(ModItems.MANAITA_SWORD_GOD.get()))) {
                 cir.cancel();
             }
         }
