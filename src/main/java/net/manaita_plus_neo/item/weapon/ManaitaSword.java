@@ -53,10 +53,6 @@ public class ManaitaSword extends ManaitaWeaponBase {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        byte keyType = 0;
-        MessageKey packet = new MessageKey(keyType);
-        PacketDistributor.sendToServer(packet);
-
         return super.use(level, player, hand);
     }
 
