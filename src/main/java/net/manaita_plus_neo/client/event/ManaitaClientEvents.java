@@ -2,8 +2,8 @@ package net.manaita_plus_neo.client.event;
 
 import net.manaita_plus_neo.ManaitaKeyBindings;
 import net.manaita_plus_neo.ManaitaPlusNeo;
+import net.manaita_plus_neo.common.network.client.MessageKey;
 import net.manaita_plus_neo.item.data.IManaitaPlusKey;
-import net.manaita_plus_neo.network.client.MessageKey;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;

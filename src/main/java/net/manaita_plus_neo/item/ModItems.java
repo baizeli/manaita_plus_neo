@@ -7,6 +7,7 @@ import net.manaita_plus_neo.item.weapon.ManaitaBow;
 import net.manaita_plus_neo.item.weapon.ManaitaSword;
 import net.manaita_plus_neo.item.weapon.ManaitaSwordGod;
 import net.manaita_plus_neo.item.armor.*;
+import net.manaita_plus_neo.item.portable.*;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -167,6 +168,16 @@ public class ModItems {
     public static final DeferredItem<Item> HOOK_BLOCK = ITEMS.register("block_hook_manaita", 
         () -> new ManaitaHookBlockItem(ModBlocks.HOOK_BLOCK.get(), new Item.Properties()
     ));
+
+    // 便携式砧板工作台
+    public static final DeferredItem<Item> CRAFTING_PORTABLE = ITEMS.register("manaita_crafting_portable", 
+        () -> new ManaitaCraftingPortable(new Item.Properties().stacksTo(1))
+    );
+
+    // 砧板之尘
+    public static final DeferredItem<Item> SOURCE = ITEMS.register("manaita_source", 
+        () -> new Item(new Item.Properties())
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

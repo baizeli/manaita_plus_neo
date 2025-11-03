@@ -15,7 +15,7 @@ import net.minecraft.nbt.CompoundTag;
 public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ManaitaPlusNeo.MOD_ID);
 
-    // 更好的砧板
+    // 砧板：革新
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MANAITA_PLUS_TAB = CREATIVE_TABS.register("manaita_plus_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.ManaitaPlusTab"))
             .icon(() -> new ItemStack(ModItems.CRAFTING_BLOCK.get()))
@@ -140,6 +140,66 @@ public class ModCreativeTabs {
                 netheriteFurnaceBlock.set(DataComponents.CUSTOM_DATA, CustomData.of(netheriteFurnaceTag));
                 output.accept(netheriteFurnaceBlock);
 
+                // 便携式砧板工作台
+                ItemStack basicCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                output.accept(basicCraftingPortable);
+                
+                // 木制便携式砧板工作台
+                ItemStack woodenCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                CompoundTag woodenPortableTag = new CompoundTag();
+                woodenPortableTag.putInt("ManaitaType", 1);
+                woodenCraftingPortable.set(DataComponents.CUSTOM_DATA, CustomData.of(woodenPortableTag));
+                output.accept(woodenCraftingPortable);
+                
+                // 石制便携式砧板工作台
+                ItemStack stoneCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                CompoundTag stonePortableTag = new CompoundTag();
+                stonePortableTag.putInt("ManaitaType", 2);
+                stoneCraftingPortable.set(DataComponents.CUSTOM_DATA, CustomData.of(stonePortableTag));
+                output.accept(stoneCraftingPortable);
+                
+                // 铁制便携式砧板工作台
+                ItemStack ironCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                CompoundTag ironPortableTag = new CompoundTag();
+                ironPortableTag.putInt("ManaitaType", 3);
+                ironCraftingPortable.set(DataComponents.CUSTOM_DATA, CustomData.of(ironPortableTag));
+                output.accept(ironCraftingPortable);
+                
+                // 金制便携式砧板工作台
+                ItemStack goldCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                CompoundTag goldPortableTag = new CompoundTag();
+                goldPortableTag.putInt("ManaitaType", 4);
+                goldCraftingPortable.set(DataComponents.CUSTOM_DATA, CustomData.of(goldPortableTag));
+                output.accept(goldCraftingPortable);
+                
+                // 钻石制便携式砧板工作台
+                ItemStack diamondCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                CompoundTag diamondPortableTag = new CompoundTag();
+                diamondPortableTag.putInt("ManaitaType", 5);
+                diamondCraftingPortable.set(DataComponents.CUSTOM_DATA, CustomData.of(diamondPortableTag));
+                output.accept(diamondCraftingPortable);
+                
+                // 绿宝石制便携式砧板工作台
+                ItemStack emeraldCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                CompoundTag emeraldPortableTag = new CompoundTag();
+                emeraldPortableTag.putInt("ManaitaType", 6);
+                emeraldCraftingPortable.set(DataComponents.CUSTOM_DATA, CustomData.of(emeraldPortableTag));
+                output.accept(emeraldCraftingPortable);
+                
+                // 红石制便携式砧板工作台
+                ItemStack redstoneCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                CompoundTag redstonePortableTag = new CompoundTag();
+                redstonePortableTag.putInt("ManaitaType", 7);
+                redstoneCraftingPortable.set(DataComponents.CUSTOM_DATA, CustomData.of(redstonePortableTag));
+                output.accept(redstoneCraftingPortable);
+                
+                // 下界合金制便携式砧板工作台
+                ItemStack netheriteCraftingPortable = new ItemStack(ModItems.CRAFTING_PORTABLE.get());
+                CompoundTag netheritePortableTag = new CompoundTag();
+                netheritePortableTag.putInt("ManaitaType", 8);
+                netheriteCraftingPortable.set(DataComponents.CUSTOM_DATA, CustomData.of(netheritePortableTag));
+                output.accept(netheriteCraftingPortable);
+
                 // 砧板钩[橡木]
                 output.accept(ModItems.WOODEN_HOOK.get());
                 
@@ -222,6 +282,8 @@ public class ModCreativeTabs {
                 output.accept(ModItems.MANAITA_PAXEL.get());
                 // 砧板之刃[神]
                 output.accept(ModItems.MANAITA_SWORD_GOD.get());
+                // 砧板之尘
+                output.accept(ModItems.SOURCE.get());
             })
             .build());
 

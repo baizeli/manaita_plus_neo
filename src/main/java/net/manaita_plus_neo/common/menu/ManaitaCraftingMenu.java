@@ -2,7 +2,6 @@ package net.manaita_plus_neo.common.menu;
 
 import net.manaita_plus_neo.block.ModBlocks;
 import net.manaita_plus_neo.Config;
-import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.game.ClientboundContainerSetSlotPacket;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Container;
@@ -75,7 +74,11 @@ public class ManaitaCraftingMenu extends RecipeBookMenu<CraftingInput, CraftingR
     }
 
     public void slotsChanged(Container container) {
-        this.access.execute((level, blockPos) -> slotChangedCraftingGrid(this, level, this.player, this.craftSlots, this.resultSlots));
+        if (this.access == ContainerLevelAccess.NULL) {
+            slotChangedCraftingGrid(this, this.player.level(), this.player, this.craftSlots, this.resultSlots);
+        } else {
+            this.access.execute((level, blockPos) -> slotChangedCraftingGrid(this, level, this.player, this.craftSlots, this.resultSlots));
+        }
     }
 
     public void fillCraftSlotsStackedContents(StackedContents stackedContents) {
@@ -93,9 +96,13 @@ public class ManaitaCraftingMenu extends RecipeBookMenu<CraftingInput, CraftingR
 
     public void removed(Player player) {
         super.removed(player);
-        this.access.execute((level, blockPos) -> {
+        if (this.access == ContainerLevelAccess.NULL) {
             this.clearContainer(player, this.craftSlots);
-        });
+        } else {
+            this.access.execute((level, blockPos) -> {
+                this.clearContainer(player, this.craftSlots);
+            });
+        }
     }
 
     public ItemStack quickMoveStack(Player player, int index) {
@@ -105,9 +112,13 @@ public class ManaitaCraftingMenu extends RecipeBookMenu<CraftingInput, CraftingR
             ItemStack itemstack1 = slot.getItem();
             itemstack = itemstack1.copy();
             if (index == 0) {
-                this.access.execute((level, blockPos) -> {
-                    itemstack1.getItem().onCraftedBy(itemstack1, level, player);
-                });
+                if (this.access == ContainerLevelAccess.NULL) {
+                    itemstack1.getItem().onCraftedBy(itemstack1, player.level(), player);
+                } else {
+                    this.access.execute((level, blockPos) -> {
+                        itemstack1.getItem().onCraftedBy(itemstack1, level, player);
+                    });
+                }
                 if (!this.moveItemStackTo(itemstack1, 10, 46, true)) {
                     return ItemStack.EMPTY;
                 }
@@ -147,6 +158,9 @@ public class ManaitaCraftingMenu extends RecipeBookMenu<CraftingInput, CraftingR
     }
 
     public boolean stillValid(Player player) {
+        if (this.access == ContainerLevelAccess.NULL) {
+            return true;
+        }
         return stillValid(this.access, player, ModBlocks.CRAFTING_BLOCK.get());
     }
 

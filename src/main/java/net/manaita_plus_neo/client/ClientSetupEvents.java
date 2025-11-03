@@ -71,6 +71,21 @@ public class ClientSetupEvents {
                         return 0;
                     }
             );
+            
+            // 便携式砧板工作台类型
+            ItemProperties.register(ModItems.CRAFTING_PORTABLE.get(),
+                    ResourceLocation.fromNamespaceAndPath(ManaitaPlusNeo.MOD_ID, "manaita_type"),
+                    (stack, level, entity, seed) -> {
+                        var customData = stack.get(DataComponents.CUSTOM_DATA);
+                        if (customData != null) {
+                            var tag = customData.getUnsafe();
+                            if (tag.contains("ManaitaType")) {
+                                return tag.getInt("ManaitaType");
+                            }
+                        }
+                        return 0;
+                    }
+            );
         });
     }
 }
